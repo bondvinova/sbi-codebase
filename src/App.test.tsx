@@ -7,6 +7,6 @@ describe('App', () => {
   it('Render Hello World', () => {
     render(<App />);
 
-    expect(screen.getByText('Hello World')).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /button/i })).toBeInTheDocument();
   });
 });

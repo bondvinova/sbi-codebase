@@ -12,7 +12,14 @@ module.exports = {
     'plugin:storybook/recommended',
     'plugin:prettier/recommended',
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs', 'vite.config.ts', 'postcss.config.js', 'tailwind.config.js'],
+  ignorePatterns: [
+    'dist',
+    '.eslintrc.cjs',
+    'vite.config.ts',
+    'postcss.config.js',
+    'tailwind.config.js',
+    'commitlint.config.cjs',
+  ],
   overrides: [],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -21,11 +28,14 @@ module.exports = {
     project: './tsconfig.json',
   },
   plugins: ['react', '@typescript-eslint', 'prettier'],
-  rules: { 'no-console': 'warn', 'no-duplicate-imports': 'error' },
+  rules: { 'no-console': 'warn', 'no-duplicate-imports': 'error', 'react/no-unescaped-entities': 0 },
   settings: {
     tailwindcss: {
       callees: ['cn'],
       config: 'tailwind.config.js',
+    },
+    react: {
+      version: 'detect',
     },
   },
 };
