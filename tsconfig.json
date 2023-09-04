@@ -20,11 +20,14 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
+    // "types": ["vitest/globals"],
     "types": ["node"],
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/styles/*": ["src/styles/*"],
+      "@/*": ["src/*"]
     }
   },
-  "include": ["src"],
+  "include": ["vite.config.ts", ".eslintrc.cjs", "src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
