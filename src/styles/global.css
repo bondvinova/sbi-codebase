@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+* {
+  letter-spacing: -0.25px;
+}
+
 @layer base {
   :root {
     --sbi-blue: #1f4181;
@@ -25,5 +33,6 @@
     --warning-60: #ce6102;
     --red-60: #ed1f27;
     --success-60: #1d8731;
+    --radius: 0.5rem;
   }
 }

@@ -13,7 +13,7 @@ describe('Button component', () => {
 
   it('Should render correct ui with different props', () => {
     render(
-      <Button variant="primary" size="sm">
+      <Button variant="default" size="sm">
         Button
       </Button>
     );
@@ -21,7 +21,9 @@ describe('Button component', () => {
     const result = screen.getByRole('button', { name: /Button/i });
 
     expect(result).toBeInTheDocument();
-    expect(result).toHaveClass('bg-purple-400 text-gray-400');
+    expect(result).toHaveClass(
+      'bg-sbi-blue-100 text-white text-base font-semibold disabled:bg-blue-30 focus:ring focus:ring-sbi-blue-100/50 focus:ring-offset-1 hover:bg-sbi-blue-100/90 focus-visible:ring focus-visible:ring-offset-1 focus-visible:ring-sbi0-blue-100/50'
+    );
     expect(result).toHaveClass('h-8 px-3 py-2');
   });
 

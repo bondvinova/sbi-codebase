@@ -1,0 +1,13 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Label component > Should render and match the snapshot 1`] = `
+<body>
+  <div>
+    <label
+      class="peer-disabled:cursor-not-allowed peer-disabled:opacity-70 font-normal text-global-slate-80 text-sm leading-5"
+    >
+      Label
+    </label>
+  </div>
+</body>
+`;

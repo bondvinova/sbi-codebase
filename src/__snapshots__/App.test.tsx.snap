@@ -2,8 +2,78 @@
 
 exports[`App > renders correctly 1`] = `
 <div
-  className="flex flex-1 items-center justify-center"
+  className="flex flex-1 items-center justify-center bg-blue-10"
 >
-  Login
+  <div
+    className="flex w-[380px] flex-col"
+  >
+    <h3
+      className="m-0 font-semibold text-blue-80 text-2xl leading-8 mb-9 text-center"
+    >
+      Aurora Admin portal
+    </h3>
+    <form
+      className="flex flex-col"
+      onSubmit={[Function]}
+    >
+      <div
+        className="flex flex-col space-y-1"
+      >
+        <label
+          className="peer-disabled:cursor-not-allowed peer-disabled:opacity-70 font-normal text-global-slate-80 text-sm leading-5"
+          htmlFor=":r0:-form-item"
+          onMouseDown={[Function]}
+        >
+          Username
+        </label>
+        <input
+          aria-describedby=":r0:-form-item-description"
+          aria-invalid={false}
+          className="placeholder:text-grey-slate-70 flex h-12 w-full rounded-sm border border-grey-slate-30 bg-white px-4 py-3 text-base leading-6 text-grey-slate-110 outline-none transition-all duration-300 file:border-0 file:bg-transparent file:text-sm file:font-medium hover:border-sbi-blue-100 focus:border-sbi-blue-100 focus:shadow-form focus:outline-none focus-visible:shadow-form focus-visible:outline-none"
+          id=":r0:-form-item"
+          name="username"
+          onBlur={[Function]}
+          onChange={[Function]}
+          placeholder="Enter a username"
+          value=""
+        />
+      </div>
+      <div
+        className="flex flex-col space-y-1 mt-6"
+      >
+        <label
+          className="peer-disabled:cursor-not-allowed peer-disabled:opacity-70 font-normal text-global-slate-80 text-sm leading-5"
+          htmlFor=":r1:-form-item"
+          onMouseDown={[Function]}
+        >
+          Password
+        </label>
+        <input
+          aria-describedby=":r1:-form-item-description"
+          aria-invalid={false}
+          className="placeholder:text-grey-slate-70 flex h-12 w-full rounded-sm border border-grey-slate-30 bg-white px-4 py-3 text-base leading-6 text-grey-slate-110 outline-none transition-all duration-300 file:border-0 file:bg-transparent file:text-sm file:font-medium hover:border-sbi-blue-100 focus:border-sbi-blue-100 focus:shadow-form focus:outline-none focus-visible:shadow-form focus-visible:outline-none"
+          id=":r1:-form-item"
+          name="password"
+          onBlur={[Function]}
+          onChange={[Function]}
+          placeholder="*******"
+          type="password"
+          value=""
+        />
+      </div>
+      <a
+        className="mt-1 w-fit text-sbi-blue hover:underline focus-visible:rounded-sm focus-visible:shadow-form focus-visible:outline-none"
+        href="/forgot-password"
+        onClick={[Function]}
+      >
+        Forgot password?
+      </a>
+      <button
+        className="inline-flex items-center justify-center rounded-sm focus-visible:outline-none disabled:pointer-events-none active:scale-[0.98] transition-all outline-none tracking-normal bg-sbi-blue-100 text-white text-base font-semibold disabled:bg-blue-30 focus:ring focus:ring-sbi-blue-100/50 focus:ring-offset-1 hover:bg-sbi-blue-100/90 focus-visible:ring focus-visible:ring-offset-1 focus-visible:ring-sbi0-blue-100/50 h-10 px-4 py-2 mt-12"
+      >
+        Sign in
+      </button>
+    </form>
+  </div>
 </div>
 `;

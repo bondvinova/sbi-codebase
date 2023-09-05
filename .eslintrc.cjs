@@ -28,7 +28,12 @@ module.exports = {
     project: './tsconfig.json',
   },
   plugins: ['react', '@typescript-eslint', 'prettier'],
-  rules: { 'no-console': 'warn', 'no-duplicate-imports': 'error', 'react/no-unescaped-entities': 0 },
+  rules: {
+    'no-console': 'warn',
+    'no-duplicate-imports': 'error',
+    'react/no-unescaped-entities': 0,
+    'react/prop-types': 0,
+  },
   settings: {
     tailwindcss: {
       callees: ['cn'],
