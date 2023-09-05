@@ -1,4 +1,5 @@
 import { Button } from '@/components/button';
+import { Spinner } from '@/components/spinner';
 import { cn } from '@/lib/clsx-twmerge';
 
 const App = () => {
@@ -11,6 +12,8 @@ const App = () => {
       <Button variant="primary" size="sm" className={cn('font-bold')}>
         Download
       </Button>
+
+      <Spinner />
     </div>
   );
 };

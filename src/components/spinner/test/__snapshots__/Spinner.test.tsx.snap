@@ -1,0 +1,25 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Spinner component > Should render and match the snapshot 1`] = `
+<body>
+  <div>
+    <div
+      class="flex h-screen flex-1 flex-col items-center justify-center"
+    >
+      <div
+        class="h-12 w-12 rounded-full border-[3px] border-transparent"
+      >
+        <div
+          class="animate-rotate absolute h-12 w-12 rounded-full border-[3px] border-transparent border-l-orange-400"
+        />
+        <div
+          class="animate-rotateOpacity1 absolute h-12 w-12 rounded-full border-[3px] border-transparent border-l-orange-400"
+        />
+        <div
+          class="animate-rotateOpacity2 h-12 w-12 rounded-full border-[3px] border-transparent border-l-orange-400"
+        />
+      </div>
+    </div>
+  </div>
+</body>
+`;
