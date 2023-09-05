@@ -1,18 +1,20 @@
-import { render, screen } from '@testing-library/react';
+// import { render, screen } from '@testing-library/react';
+import { MemoryRouter, Route, Routes } from 'react-router-dom';
+import { create } from 'react-test-renderer';
 import { describe, expect, it } from 'vitest';
 
-import App from '@/App';
+import Login from '@/features/authentication/login';
 
 describe('App', () => {
-  it('Render Hello World', () => {
-    render(<App />);
+  it('renders correctly', () => {
+    const renderer = create(
+      <MemoryRouter initialEntries={['/login']}>
+        <Routes>
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      </MemoryRouter>
+    );
 
-    expect(screen.getByRole('button', { name: /button/i })).toBeInTheDocument();
-  });
-
-  it.fails('Not render Hello World', () => {
-    render(<App />);
-
-    expect(screen.getByText(/hello world/i)).toBeInTheDocument();
+    expect(renderer.toJSON()).toMatchSnapshot();
   });
 });

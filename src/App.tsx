@@ -1,20 +1,12 @@
-import { Button } from '@/components/button';
-import { Spinner } from '@/components/spinner';
-import { cn } from '@/lib/clsx-twmerge';
+import { Suspense } from 'react';
+
+import Router from '@/router/Router';
 
 const App = () => {
   return (
-    <div className="bg-slate-500 p-4">
-      <Button>Button</Button>
-      <Button asChild>
-        <a href="/">Link</a>
-      </Button>
-      <Button variant="primary" size="sm" className={cn('font-bold')}>
-        Download
-      </Button>
-
-      <Spinner />
-    </div>
+    <Suspense fallback={null}>
+      <Router />
+    </Suspense>
   );
 };
 

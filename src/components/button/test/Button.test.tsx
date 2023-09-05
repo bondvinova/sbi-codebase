@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { describe, expect, it, vi } from 'vitest';
 
-import { Button } from '@/components/button';
+import Button from '@/components/button';
 
 describe('Button component', () => {
   it('Should render and match the snapshot', () => {

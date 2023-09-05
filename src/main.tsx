@@ -2,7 +2,7 @@ import React, { lazy, Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 
-import { Spinner } from '@/components/spinner';
+import Spinner from '@/components/spinner';
 
 import '@/styles/global.css';
 
