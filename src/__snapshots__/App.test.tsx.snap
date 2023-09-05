@@ -1,7 +1,9 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`App > renders correctly 1`] = `
-<div>
+<div
+  className="flex flex-1 items-center justify-center"
+>
   Login
 </div>
 `;

@@ -6,55 +6,29 @@ export default {
   theme: {
     extend: {
       colors: {
-        border: 'hsl(var(--border))',
-        input: 'hsl(var(--input))',
-        ring: 'hsl(var(--ring))',
-        background: 'hsl(var(--background))',
-        foreground: 'hsl(var(--foreground))',
-        primary: {
-          DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))',
-        },
-        secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
-          foreground: 'hsl(var(--secondary-foreground))',
-        },
-        destructive: {
-          DEFAULT: 'hsl(var(--destructive) / <alpha-value>)',
-          foreground: 'hsl(var(--destructive-foreground) / <alpha-value>)',
-        },
-        muted: {
-          DEFAULT: 'hsl(var(--muted))',
-          foreground: 'hsl(var(--muted-foreground))',
-        },
-        accent: {
-          DEFAULT: 'hsl(var(--accent))',
-          foreground: 'hsl(var(--accent-foreground))',
-        },
-        popover: {
-          DEFAULT: 'hsl(var(--popover))',
-          foreground: 'hsl(var(--popover-foreground))',
-        },
-        card: {
-          DEFAULT: 'hsl(var(--card))',
-          foreground: 'hsl(var(--card-foreground))',
-        },
-      },
-      borderRadius: {
-        xl: `calc(var(--radius) + 4px)`,
-        lg: `var(--radius)`,
-        md: `calc(var(--radius) - 2px)`,
-        sm: 'calc(var(--radius) - 4px)',
+        'sbi-blue': 'var(--sbi-blue)',
+        'sbi-blue-100': 'var(--sbi-blue-100)',
+        'sbi-blue-sub': 'var(--sbi-blue-sub)',
+        'blue-10': 'var(--blue-10)',
+        'blue-30': 'var(--blue-30)',
+        'blue-80': 'var(--blue-80)',
+        'blue-90': 'var(--blue-90)',
+        'slate-00': 'var(--slate-00)',
+        'slate-30': 'var(--slate-30)',
+        'slate-40': 'var(--slate-40)',
+        'slate-50': 'var(--slate-50)',
+        'slate-70': 'var(--slate-70)',
+        'slate-80': 'var(--slate-80)',
+        'slate-90': 'var(--slate-90)',
+        'slate-100': 'var(--slate-100)',
+        'slate-110': 'var(--slate-110)',
+        'danger-70': 'var(--danger-70)',
+        'warning-10': 'var(--warning-10)',
+        'warning-60': 'var(--warning-60)',
+        'red-60': 'var(--red-60)',
+        'success-60': 'var(--success-60)',
       },
       keyframes: {
-        accordionDown: {
-          from: { height: 0 },
-          to: { height: 'var(--radix-accordion-content-height)' },
-        },
-        accordionUp: {
-          from: { height: 'var(--radix-accordion-content-height)' },
-          to: { height: 0 },
-        },
         rotate: {
           '0%': {
             transform: 'rotate(0deg)',
@@ -75,8 +49,6 @@ export default {
         },
       },
       animation: {
-        accordionDown: 'accordionDown 0.2s ease-out',
-        accordionUp: 'accordionUp 0.2s ease-out',
         rotate: 'rotate 1s ease infinite',
         rotateOpacity1: 'rotateOpacity 1s ease infinite 0.1s',
         rotateOpacity2: 'rotateOpacity 1s ease infinite 0.2s',
