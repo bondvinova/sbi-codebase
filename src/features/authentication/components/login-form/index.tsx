@@ -6,7 +6,7 @@ import Button from '@/components/button';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/form-controller';
 import Input from '@/components/input';
 import { ROUTES_NAME } from '@/constants/router';
-import { loginSchema, type LoginSchema } from '@/types/login-types';
+import { loginSchema, type LoginSchema } from '@/types/login';
 
 const LoginForm = () => {
   const methods = useForm<LoginSchema>({

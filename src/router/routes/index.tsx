@@ -8,7 +8,7 @@ import HorizontalLayout from '@/providers/layouts/HorizontalLayout';
 import VerticalLayout from '@/providers/layouts/VerticalLayout';
 import Authentication from '@/router/routes/Authentication';
 import Pages from '@/router/routes/Pages';
-import type { GetLayout, LayoutItem, RoutesType } from '@/types/route-types';
+import type { GetLayout, LayoutItem, RoutesType } from '@/types/router';
 
 const getLayout: GetLayout = {
   blank: <BlankLayout />,

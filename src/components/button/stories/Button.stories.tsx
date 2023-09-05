@@ -20,3 +20,10 @@ export const Primary: Story = {
     children: 'Primary',
   },
 };
+
+export const Outline: Story = {
+  args: {
+    children: 'Outline',
+    variant: 'outline',
+  },
+};

@@ -1,7 +1,7 @@
 import { lazy } from 'react';
 
 import { LayoutType, ROUTES_NAME } from '@/constants/router';
-import type { RoutesType } from '@/types/route-types';
+import type { RoutesType } from '@/types/router';
 
 const Login = lazy(() => import('@/features/authentication/login'));
 const ForgotPassword = lazy(() => import('@/features/authentication/forgot-password'));

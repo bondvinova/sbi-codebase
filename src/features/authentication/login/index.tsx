@@ -1,23 +1,21 @@
-import React from 'react';
-
 import Heading from '@/components/heading';
-import LoginForm from '@/features/authentication/components/LoginForm';
+import AlertIcon from '@/components/icons/AlertIcon';
+import AuthAlert from '@/features/authentication/components/auth-alert';
+import AuthWrapper from '@/features/authentication/components/auth-wrapper';
+import LoginForm from '@/features/authentication/components/login-form';
 
-interface LoginProps extends React.HTMLAttributes<HTMLDivElement> {}
-
-const Login = React.forwardRef<HTMLDivElement, LoginProps>((props: LoginProps, ref) => {
+const Login = () => {
   return (
-    <div ref={ref} {...props} className="flex flex-1 items-center justify-center bg-blue-10">
-      <div className="flex w-[380px] flex-col">
-        <Heading className="mb-9 text-center" variant="title-form">
-          Aurora Admin portal
-        </Heading>
-        <LoginForm />
-      </div>
-    </div>
+    <AuthWrapper>
+      <Heading className="mb-9 text-center" variant="title-form">
+        Aurora Admin portal
+      </Heading>
+      <AuthAlert className="mb-6" renderIcon={() => <AlertIcon />}>
+        Incorrect user name or password.
+      </AuthAlert>
+      <LoginForm />
+    </AuthWrapper>
   );
-});
-
-Login.displayName = 'Login';
+};
 
 export default Login;

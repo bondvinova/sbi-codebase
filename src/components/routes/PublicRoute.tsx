@@ -3,7 +3,7 @@ import { Navigate } from 'react-router-dom';
 
 // ** Reoutes Type Import **
 import { ROUTES_NAME } from '@/constants/router';
-import { RoutesType } from '@/types/route-types';
+import { RoutesType } from '@/types/router';
 
 interface Props extends SuspenseProps {
   route: RoutesType;

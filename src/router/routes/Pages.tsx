@@ -1,7 +1,7 @@
 import { lazy } from 'react';
 
 import { ROUTES_NAME } from '@/constants/router';
-import { RoutesType } from '@/types/route-types';
+import { RoutesType } from '@/types/router';
 
 const ClientManagement = lazy(() => import('@/features/client-management'));
 
