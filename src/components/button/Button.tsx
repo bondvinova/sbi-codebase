@@ -16,9 +16,11 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: 'bg-orange-400 text-white hover:bg-slate-300 focus:ring-2 focus-visible:ring-orange/50',
+        primary: 'bg-purple-400 text-gray-400',
       },
       size: {
         default: 'h-10 px-4 py-2',
+        sm: 'h-8 px-3 py-2',
       },
     },
     defaultVariants: {

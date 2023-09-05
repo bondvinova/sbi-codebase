@@ -27,6 +27,7 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.46.0",
     "react-router-dom": "^6.15.0",
+    "react-test-renderer": "^18.2.0",
     "tailwind-merge": "^1.14.0"
   },
   "devDependencies": {
@@ -42,12 +43,14 @@
     "@storybook/react": "^7.4.0",
     "@storybook/react-vite": "^7.4.0",
     "@storybook/testing-library": "^0.2.0",
+    "@testing-library/dom": "^9.3.1",
     "@testing-library/jest-dom": "^6.1.2",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
     "@types/node": "^20.5.9",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
+    "@types/react-test-renderer": "^18.0.1",
     "@typescript-eslint/eslint-plugin": "^6.5.0",
     "@typescript-eslint/parser": "^6.5.0",
     "@vitejs/plugin-react": "^4.0.3",
