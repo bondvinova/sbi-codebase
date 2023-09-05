@@ -61,7 +61,9 @@ const LoginForm = () => {
           Forgot password?
         </Link>
 
-        <Button className="mt-12">Sign in</Button>
+        <Button className="mt-8" type="submit">
+          Sign in
+        </Button>
       </form>
     </Form>
   );

@@ -120,7 +120,8 @@ exports[`App > renders correctly 1`] = `
         Forgot password?
       </a>
       <button
-        className="inline-flex items-center justify-center rounded-sm focus-visible:outline-none disabled:pointer-events-none active:scale-[0.98] transition-all duration-300 outline-none tracking-normal text-white text-base font-semibold bg-sbi-blue-100 disabled:bg-blue-30 focus:ring focus:ring-sbi-blue-100/50 focus:ring-offset-1 hover:bg-sbi-blue-100/90 focus-visible:ring focus-visible:ring-offset-1 focus-visible:ring-sbi0-blue-100/50 h-10 px-4 py-2 mt-12"
+        className="inline-flex items-center justify-center rounded-sm focus-visible:outline-none disabled:pointer-events-none active:scale-[0.98] transition-all duration-300 outline-none tracking-normal text-white text-base font-semibold bg-sbi-blue-100 disabled:bg-blue-30 focus:ring focus:ring-sbi-blue-100/50 focus:ring-offset-1 hover:bg-sbi-blue-100/90 focus-visible:ring focus-visible:ring-offset-1 focus-visible:ring-sbi0-blue-100/50 h-10 px-4 py-2 mt-8"
+        type="submit"
       >
         Sign in
       </button>

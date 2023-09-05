@@ -3,12 +3,14 @@ import { useState } from 'react';
 import Button from '@/components/button';
 import Heading from '@/components/heading';
 import AlertIcon from '@/components/icons/AlertIcon';
+import SuccessIcon from '@/components/icons/SuccessIcon';
 import Input from '@/components/input';
 import { cn } from '@/lib/clsx-twmerge';
-import { KeyOfIcon, ValueOfIcon } from '@/types/icons';
+import type { KeyOfIcon, ValueOfIcon } from '@/types/icons';
 
 export const IconsObject = {
   AlertIcon,
+  SuccessIcon,
 };
 
 const Icons = () => {

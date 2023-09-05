@@ -1,15 +1,18 @@
-import React from 'react';
+import Heading from '@/components/heading';
+import Paragraph from '@/components/paragraph';
+import AuthWrapper from '@/features/authentication/components/auth-wrapper';
+import ForgotPasswordForm from '@/features/authentication/components/forgot-password-form';
 
-interface ForgotPasswordProps extends React.HTMLAttributes<HTMLDivElement> {}
-
-const ForgotPassword = React.forwardRef<HTMLDivElement, ForgotPasswordProps>((props: ForgotPasswordProps, ref) => {
+const ForgotPassword = () => {
   return (
-    <div ref={ref} {...props}>
-      ForgotPassword
-    </div>
+    <AuthWrapper>
+      <Heading className="mb-9 text-center" variant="title-form">
+        Forgot password
+      </Heading>
+      <Paragraph className="mb-9">Enter your username and we will send you a link to reset your password</Paragraph>
+      <ForgotPasswordForm />
+    </AuthWrapper>
   );
-});
-
-ForgotPassword.displayName = 'ForgotPassword';
+};
 
 export default ForgotPassword;
