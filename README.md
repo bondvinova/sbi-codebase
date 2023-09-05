@@ -33,7 +33,7 @@ If you are developing a production application, we recommend updating the config
 - **[React (Version 18)](https://react.dev/learn)**
 - **[Vite](https://vitejs.dev/guide/)**
 - **[React Query (Version 4)](https://tanstack.com/query/v4/docs/react/overview)**
-- [\*\*React Hook Form (Version 7)](https://react-hook-form.com/docs) + Zod\*\*
+- [**React Hook Form (Version 7)**](https://react-hook-form.com/docs) + [**Zod**](https://zod.dev/)
 - [**Zustand**](https://docs.pmnd.rs/zustand/getting-started/introduction)
 
 ## **UI & styling**
@@ -41,7 +41,6 @@ If you are developing a production application, we recommend updating the config
 - [**Tailwindcss**](https://tailwindcss.com/docs/installation)
 - [**Radix-UI**](https://www.radix-ui.com/themes/docs/overview/getting-started)
 - [**Shadcn**](https://ui.shadcn.com/docs)
-- antd / MUI / Mantine → complex feature?
 
 ## **Static type checking & linting**
 
@@ -106,33 +105,33 @@ If you are developing a production application, we recommend updating the config
 <!-- prettier-ignore -->
 ```jsx
 src
-		|-- api
-		|-- assets
-		    |-- icons
-						|-- index.tsx
-				|-- images
-		|-- components
-				|-- button
-						|-- index.tsx
-						|-- Button.stories.tsx
-				|-- paragraph
-						|-- index.tsx
-						|-- Paragraph.stories.tsx
-		|-- hooks
-		|-- layouts
-				|-- BlankLayout.tsx
-				|-- VerticalLayout.tsx
-		|-- lib
-				|-- utils.tsx
-		|-- router
-				|-- routes
-						|-- index.tsx
-						|-- Authentication.tsx
-						|-- Pages.tsx
-				|-- Router.tsx
-				|-- constant.tsx
-		|-- stories
-		|-- styles
-				|-- global.css
-		|-- types
+|-- api
+|-- assets
+    |-- icons
+        |-- index.tsx
+    |-- images
+|-- components
+    |-- button
+        |-- index.tsx
+        |-- Button.stories.tsx
+    |-- paragraph
+        |-- index.tsx
+        |-- Paragraph.stories.tsx
+|-- hooks
+|-- layouts
+    |-- BlankLayout.tsx
+    |-- VerticalLayout.tsx
+|-- lib
+    |-- utils.tsx
+|-- router
+    |-- routes
+        |-- index.tsx
+        |-- Authentication.tsx
+        |-- Pages.tsx
+    |-- Router.tsx
+    |-- constant.tsx
+|-- stories
+|-- styles
+    |-- global.css
+|-- types
 ```
