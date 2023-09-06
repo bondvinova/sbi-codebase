@@ -28,7 +28,7 @@ export const InputDefault: Story = {
   },
 };
 
-export const InputWithDefault: Story = {
+export const InputWithValue: Story = {
   args: {
     value: 'bond@sbi.com',
   },
