@@ -26,8 +26,6 @@ If you are developing a production application, we recommend updating the config
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 
-# Codebase Vinova
-
 ## **Core**
 
 - **[React (Version 18)](https://react.dev/learn)**
@@ -41,17 +39,19 @@ If you are developing a production application, we recommend updating the config
 - [**Tailwindcss**](https://tailwindcss.com/docs/installation)
 - [**Radix-UI**](https://www.radix-ui.com/themes/docs/overview/getting-started)
 - [**Shadcn**](https://ui.shadcn.com/docs)
+- [**Mantine Dates**](https://mantine.dev/dates/dates-provider/)
 
 ## **Static type checking & linting**
 
 - [**Typescript**](https://www.typescriptlang.org/)
 - [**Husky**](https://github.com/typicode/husky)
-- **[Commitlint](https://commitlint.js.org/#/)**
+- [**Commitlint**](https://commitlint.js.org/#/)
 
 ## Testing Libraries
 
-- **[Vitest](https://vitest.dev/guide/)**
+- [**Vitest**](https://vitest.dev/guide/)
 - [**@testing-library/react**](https://testing-library.com/docs/react-testing-library/intro)
+- [**@testing-library/dom**](https://www.npmjs.com/package/@testing-library/dom)
 - [**@testing-library/jest-dom**](https://testing-library.com/docs/ecosystem-jest-dom/)
 - [**@testing-library/user-event**](https://github.com/testing-library/user-event)
 
@@ -61,6 +61,8 @@ If you are developing a production application, we recommend updating the config
 - [**Prettier**](https://github.com/prettier/prettier)
 - [**eslint-config-prettier**](https://github.com/prettier/eslint-config-prettier)
 - [**eslint-plugin-prettier**](https://github.com/prettier/eslint-plugin-prettier)
+- [**prettier-plugin-tailwindcss**](https://www.npmjs.com/package/prettier-plugin-tailwindcss)
+- [**@ianvs/prettier-plugin-sort-imports**](https://github.com/IanVS/prettier-plugin-sort-imports)
 
 ## Others
 
@@ -105,33 +107,45 @@ If you are developing a production application, we recommend updating the config
 <!-- prettier-ignore -->
 ```jsx
 src
-|-- api
 |-- assets
-    |-- icons
-        |-- index.tsx
     |-- images
 |-- components
     |-- button
         |-- index.tsx
+        |-- Button.test.tsx
         |-- Button.stories.tsx
     |-- paragraph
         |-- index.tsx
+        |-- Paragraph.test.tsx
         |-- Paragraph.stories.tsx
+|-- features
+    |-- authentication
+        |-- components
+            |-- login-form
+                |-- index.tsx
+        |-- login
+            |-- index.tsx
+    |-- misc
+        |-- common-error
+            |-- index.tsx
 |-- hooks
-|-- layouts
-    |-- BlankLayout.tsx
-    |-- VerticalLayout.tsx
+|-- providers
+    |-- layouts
+        |-- BlankLayout.tsx
+        |-- VerticalLayout.tsx
 |-- lib
-    |-- utils.tsx
+    |-- clsx-twmerge.ts
 |-- router
     |-- routes
         |-- index.tsx
         |-- Authentication.tsx
         |-- Pages.tsx
     |-- Router.tsx
-    |-- constant.tsx
-|-- stories
 |-- styles
     |-- global.css
 |-- types
+    |-- icons.ts
+    |-- login.ts
+    |-- router.ts
+|-- utils
 ```
